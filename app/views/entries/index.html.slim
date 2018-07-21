@@ -1,0 +1,4 @@
+- @entries.each do |entry|
+  = link_to entry.title, entry_path(entry)
+br
+= link_to 'New Entry', new_entry_path
