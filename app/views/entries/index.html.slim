@@ -1,5 +1,6 @@
 - @entries.each do |entry|
-  = link_to entry.title, entry_path(entry)
+  h2
+    = link_to entry.title, entry_path(entry)
 br
 
 - if current_user && current_user.role == 'admin'

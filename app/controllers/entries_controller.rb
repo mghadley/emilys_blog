@@ -6,7 +6,7 @@ class EntriesController < ApplicationController
   end
 
   def show
-    @entry = Entry.find(params[:id])
+    @entry = Entry.includes(:comments).find(params[:id])
   end
 
   def new

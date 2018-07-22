@@ -1,0 +1,7 @@
+h1 Add comment for this post
+
+= form_with model: @comment, url: [@entry, @comment], local: true do |f|
+  .form-group
+    = f.label :text
+    = f.text_field :text, class: 'form-control'
+  = f.submit class: 'btn btn-primary'

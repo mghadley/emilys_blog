@@ -1,2 +1,9 @@
 h1 = @entry.title
 p = @entry.body
+
+= link_to 'Add Comment', new_entry_comment_path(@entry)
+
+h3 Comments
+- @entry.comments.each do |comment|
+  div
+    = comment.text
